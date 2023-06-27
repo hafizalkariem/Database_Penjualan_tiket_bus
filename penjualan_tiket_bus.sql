@@ -12,4 +12,4 @@ create table armada
 create table laporan_transaksi 
 (id_laporan varchar(10) primary key not null, tanggal date,id_transaksi varchar(10),jumlah_tiket numeric(12), total_pendapatan numeric(12) );
 create table Rute 
-( id_rute varchar(10), rute_awal varchar(10), rute_akhir varchar(10) );
+( id_rute varchar(10), rute_awal varchar(50), rute_akhir varchar(50) );
