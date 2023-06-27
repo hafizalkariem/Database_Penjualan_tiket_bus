@@ -33,5 +33,7 @@ Dalam tugas kali ini kita dituntut untuk membuat Entity Relationship Diagram den
 4. transaksi penjualan
 5. laporan transaksi
 
-setelah menimbang semua ketentuan diatas maka kita dapatkan ERD seperti berikut :
+setelah menimbang semua ketentuan diatas maka kita dapatkan ERD yang ada didalam file berikut :
+[ERD_penjualan_tiket_bus.pdf](https://github.com/hafizalkariem/Database_Penjualan_tiket_bus/files/11884952/ERD_penjualan_tiket_bus.pdf)
+
 
