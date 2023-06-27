@@ -35,5 +35,6 @@ Dalam tugas kali ini kita dituntut untuk membuat Entity Relationship Diagram den
 
 setelah menimbang semua ketentuan diatas maka kita dapatkan ERD yang ada didalam file berikut :
 [ERD_penjualan_tiket_bus.pdf](https://github.com/hafizalkariem/Database_Penjualan_tiket_bus/files/11884952/ERD_penjualan_tiket_bus.pdf)
+![Screenshot 2023-06-27 231956](https://github.com/hafizalkariem/Database_Penjualan_tiket_bus/assets/115614957/5be98592-056c-4631-88ae-f474c43aedb0)
 
 
