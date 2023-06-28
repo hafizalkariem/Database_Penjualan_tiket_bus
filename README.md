@@ -17,7 +17,7 @@
 
 
 
-| [ERD](#ERD) | [DDL](#SQL Data Manipulation Language (CRUD))  | [SQL CRUD](#SQL Data Manipulation Language (CRUD)) |[SQL JOIN](#SQL JOIN) |
+| [ERD](#ERD) | [DDL](#SQL-Data-Definition-Language)  | [SQL CRUD](#SQL-Data-Manipulation-Language-(CRUD)) |[SQL JOIN](#SQL-JOIN) |
 | :---| :------- | :----- | :-------|
 
 
