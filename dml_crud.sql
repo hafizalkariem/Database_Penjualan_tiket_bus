@@ -46,7 +46,7 @@ DELETE FROM transaksi
 WHERE id_tiket = 'T01';    
 
 create table armada
-(id_armada varchar(10) primary key not null,kelas varchar(10), id_rute varchar(10), jumlah_kursi numeric (12), harga int(9) );
+(id_armada varchar(10) primary key not null,kelas varchar(10), id_rute varchar(10), jumlah_kursi numeric (12), harga varchar(12) );
 INSERT INTO armada
 	(id_armada,rute,kelas,id_rute,jumlah_kursi,harga)
     VALUES ('ARM01','RUTE01','EXECUTIVE','28','210.000.00'),
