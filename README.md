@@ -17,7 +17,7 @@
 
 
 
-| [ERD](ERD) | DDL  | SQL CRUD |SQL JOIN |
+| [ERD](#ERD) | DDL  | SQL CRUD |SQL JOIN |
 | :---| :------- | :----- | :-------|
 
 
