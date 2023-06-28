@@ -3,7 +3,7 @@ create table penumpang
 (id_penumpang varchar (10) primary key not null, nama varchar (45), no_tlp varchar (12) ) ;
 insert into penumpang
 (id_penumpang,nama,no_tlp)
-	VALUES ('P01','ahmad','82212345678'),
+VALUES ('P01','ahmad','82212345678'),
     ('P02','daffa','82212345679'),
     ('P03','zidan','82212345680'),
     ('P04','zaki','82212345681'),
@@ -12,15 +12,15 @@ insert into penumpang
     ('P07','gilar','82212345684'),
     ('P08','ricky','82212345685'),
     ('P09','dito','82212345686'),
-    ('P10','hadi','82212345687')
+    ('P10','hadi','82212345687');
 
-	UPDATE penumpang
-	SET nama = 'hadi', no_tlp = '82212345687'
-	WHERE id_penumpang = 'P01';
-	SET nama = 'ahmad', no_tlp = '82212345678'
-	WHERE id penumpang = 'P10';
-	DELETE FROM penumpang
-	WHERE nama = 'dito';
+UPDATE penumpang
+SET nama = 'hadi', no_tlp = '82212345687'
+WHERE id_penumpang = 'P01';
+SET nama = 'ahmad', no_tlp = '82212345678'
+WHERE id_penumpang = 'P10';
+DELETE FROM penumpang
+WHERE nama = 'dito';
 
 create table jadwal_berangkat
 (id_jadwal varchar(10) primary key not null, id_armada varchar(10), jam_berangkat time);
@@ -29,7 +29,7 @@ create table transaksi
 (id_transaksi varchar(10) primary key not null, id_tiket varchar(10), tanggal date);
 INSERT INTO transaksi 
 (id_transaksi,id_tiket,tanggal)
-	VALUES ('TRANS01','T01','2023-06-27'),
+VALUES ('TRANS01','T01','2023-06-27'),
 	('TRANS02','T02','2023-06-27'),
 	('TRANS03','T03','2023-06-27'),
     ('TRANS04','T04','2023-06-27'),
