@@ -66,25 +66,25 @@ untuk melihat kolom kolomnya beserta tipe datanya kita dapat menggunakan syntak:
 desc penumpang
 ```
 untuk hasil dari tabelnya adalah sebagai berikut:
-1. penumpang
+1. penumpang  
 ![Screenshot 2023-06-28 223703](https://github.com/hafizalkariem/Database_Penjualan_tiket_bus/assets/115614957/c019e23e-9f26-4951-b551-512d4abb1071)
 
-2. armada
+2. armada  
 ![armada](https://github.com/hafizalkariem/Database_Penjualan_tiket_bus/assets/115614957/4283fcd0-f774-4f5d-ab66-1bc5ec280162)
 
-3. jadwal_berangkat
+3. jadwal_berangkat  
 ![jadwal](https://github.com/hafizalkariem/Database_Penjualan_tiket_bus/assets/115614957/8f00ca29-bf54-4398-b4e1-712d7b3a235b)
 
-4. rute
+4. rute  
 ![rute](https://github.com/hafizalkariem/Database_Penjualan_tiket_bus/assets/115614957/e101addf-d3d1-480e-ab8b-0c2f9b77a6fa)
 
-5. tiket
+5. tiket  
 ![tiket](https://github.com/hafizalkariem/Database_Penjualan_tiket_bus/assets/115614957/f87f3ee3-3b8b-4e89-96d3-d92b06a9be95)
 
-6. transaksi
+6. transaksi  
 ![transaksi](https://github.com/hafizalkariem/Database_Penjualan_tiket_bus/assets/115614957/f00caf8c-e27e-4fc0-b9b4-525be6b7aa90)
 
-7. laporan_transaksi
+7. laporan_transaksi  
 ![laporan](https://github.com/hafizalkariem/Database_Penjualan_tiket_bus/assets/115614957/20fbe913-8bd9-498b-b6bd-9548fee8974c) 
 
 
