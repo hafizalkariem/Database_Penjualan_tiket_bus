@@ -80,9 +80,9 @@ INSERT INTO armada
     where id_armada = 'ARM24';
 
 CREATE table laporan_transaksi 
-(id_laporan varchar(10) primary key not null, tanggal date, jumlah_tiket numeric(12), total_pendapatan numeric(12) );
+(id_laporan varchar(10) primary key not null,id_transaksi varchar(10), tanggal date, jumlah_tiket numeric(12), total_pendapatan numeric(12) );
 INSERT INTO laporan_transaksi
-(id_laporan,tanggal,jumlah_transaksi,total_pendapatan)
+(id_laporan,id_transaksi,tanggal,jumlah_tiket,total_pendapatan)
 VALUES ('L001','TRANS01','2023-06-27','1','280000'),
 ('L002','TRANS02','2023-06-27','1','280000'),
 ('L003','TRANS03','2023-06-27','1','280000'),
