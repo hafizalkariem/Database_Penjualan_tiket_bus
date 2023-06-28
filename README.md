@@ -90,7 +90,7 @@ untuk hasil dari tabelnya adalah sebagai berikut:
 
 ## SQL Data Manipulation Language (CRUD)
 setelah membuat tabel tabel diatas maka selanjutnya tentu kita melakukan query CREATE,READ,UPDATE,DELETE    
-untuk querynya dapat dilihat di : ......    
+untuk querynya dapat dilihat di : [SQL CRUD](dml_crud.sql)   
 
 Berikut salah satu syntak dari pengisian data dari tabel tabel diatas. disini kita akan mencoba mengisi data penumpang:     
 
@@ -142,4 +142,6 @@ select * from penumpang;
 ![data laporan](https://github.com/hafizalkariem/Database_Penjualan_tiket_bus/assets/115614957/5583c854-137b-4ac5-994c-93cea7267bba)
 
 ## SQL JOIN
+
+SQL JOIN terbagi menjadi beberapa bagian seperti INNER JOIN, LEFT JOIN, RIGHT JOIN dan FULL JOIN.
 
