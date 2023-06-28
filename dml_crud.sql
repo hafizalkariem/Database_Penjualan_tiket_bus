@@ -1,4 +1,6 @@
 create database penjualan_tiket_bus;
+
+-- TABEL PENUMPANG
 create table penumpang 
 (id_penumpang varchar (10) primary key not null, nama varchar (45), no_tlp varchar (12) ) ;
 insert into penumpang
@@ -13,7 +15,6 @@ VALUES ('P01','ahmad','82212345678'),
 ('P08','ricky','82212345685'),
 ('P09','dito','82212345686'),
 ('P10','hadi','82212345687');
-
 UPDATE penumpang
 SET nama = 'hadi', no_tlp = '82212345687'
 WHERE id_penumpang = 'P01';
@@ -23,9 +24,33 @@ WHERE id_penumpang = 'P10';
 DELETE FROM penumpang
 WHERE nama = 'dito';
 
+-- TABEL JADWAL_BERANGKAT
 create table jadwal_berangkat
 (id_jadwal varchar(10) primary key not null, id_armada varchar(10), jam_berangkat time);
+INSERT INTO `jadwal_berangkat` (`id_jadwal`, `id_armada`, `jam_berangkat`)
+VALUES ('JD01', 'ARM01', '08:00:00'),
+('JD02', 'ARM01', '15:30:00'),
+('JD03', 'ARM02', '08:00:00'),
+('JD04', 'ARM02', '15:30:00'),
+('JD05', 'ARM03', '08:00:00'),
+('JD06', 'ARM03', '15:30:00'),
+('JD07', 'ARM04', '08:00:00'),
+('JD08', 'ARM04', '15:30:00'),
+('JD09', 'ARM05', '08:00:00'),
+('JD10', 'ARM05', '15:30:00'),
+('JD11', 'ARM06', '08:00:00'), 
+('JD12', 'ARM06', '15:30:00'), 
+('JD13', 'ARM07', '08:00:00'), 
+('JD14', 'ARM07', '15:30:00'), 
+('JD15', 'ARM08', '08:00:00'), 
+('JD16', 'ARM08', '15:30:00'), 
+('JD17', 'ARM09', '08:00:00'), 
+('JD18', 'ARM09', '15:30:00'), 
+('JD19', 'ARM10', '08:00:00'), 
+('JD20', 'ARM10', '15:30:00');
 
+
+-- TABEL TIKET
 create table tiket
 (id_tiket varchar(10) primary key not null, id_jadwal varchar(10), id_penumpang varchar(10), no_kursi numeric(10) );
 INSERT INTO tiket
@@ -49,6 +74,8 @@ WHERE id_tiket = 'T01';
 DELETE FROM tiket
 WHERE id_jadwal = 'JD04';
 
+
+-- TABEL TRANSAKSI
 create table transaksi
 (id_transaksi varchar(10) primary key not null, id_tiket varchar(10), tanggal date);
 INSERT INTO transaksi 
@@ -69,6 +96,8 @@ WHERE id_transaksi = 'TRANS01';
 DELETE FROM transaksi
 WHERE id_tiket = 'T01';    
 
+
+-- TABEL ARMADA
 create table armada
 (id_armada varchar(10) primary key not null,kelas varchar(10), id_rute varchar(10), jumlah_kursi numeric (12), harga varchar(12) );
 INSERT INTO armada
@@ -103,6 +132,7 @@ INSERT INTO armada
     DELETE FROM armada
     where id_armada = 'ARM24';
 
+-- TABEL LAPORAN TRANSAKSI
 CREATE table laporan_transaksi 
 (id_laporan varchar(10) primary key not null,id_transaksi varchar(10), tanggal date, jumlah_tiket numeric(12), total_pendapatan numeric(12) );
 INSERT INTO laporan_transaksi
@@ -123,6 +153,8 @@ WHERE id_laporan = 'L004';
 DELETE FROM laporan_transaksi
 WHERE id_laporan = 'L010';
   
+
+-- TABEL RUTE
 create table Rute 
 ( id_rute varchar(10) primary key not null, rute_awal varchar(50), rute_akhir varchar(50) );
 INSERT INTO Rute
