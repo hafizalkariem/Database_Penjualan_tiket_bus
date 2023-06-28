@@ -14,15 +14,14 @@ VALUES ('P01','ahmad','82212345678'),
 ('P09','dito','82212345686'),
 ('P10','hadi','82212345687');
 
-	UPDATE penumpang
-	SET nama = 'hadi', no_tlp = '82212345687'
-    WHERE id_penumpang = 'P01';
-    
-    UPDATE penumpang
-	SET nama = 'ahmad', no_tlp = '82212345678'
-	WHERE id_penumpang = 'P10';
-	DELETE FROM penumpang
-	WHERE nama = 'dito';
+UPDATE penumpang
+SET nama = 'hadi', no_tlp = '82212345687'
+WHERE id_penumpang = 'P01';
+UPDATE penumpang
+SET nama = 'ahmad', no_tlp = '82212345678'
+WHERE id_penumpang = 'P10';
+DELETE FROM penumpang
+WHERE nama = 'dito';
 
 create table jadwal_berangkat
 (id_jadwal varchar(10) primary key not null, id_armada varchar(10), jam_berangkat time);
@@ -54,16 +53,16 @@ create table transaksi
 (id_transaksi varchar(10) primary key not null, id_tiket varchar(10), tanggal date);
 INSERT INTO transaksi 
 (id_transaksi,id_tiket,tanggal)
-	VALUES ('TRANS01','T01','2023-06-27'),
-	('TRANS02','T02','2023-06-27'),
-	('TRANS03','T03','2023-06-27'),
-    ('TRANS04','T04','2023-06-27'),
-    ('TRANS05','T05','2023-06-28'),
-    ('TRANS06','T06','2023-06-28'),
-    ('TRANS07','T07','2023-06-29'),
-    ('TRANS08','T08','2023-06-29'),
-    ('TRANS09','T09','2023-06-29'),
-    ('TRANS10','T10','2023-06-29');
+VALUES ('TRANS01','T01','2023-06-27'),
+('TRANS02','T02','2023-06-27'),
+('TRANS03','T03','2023-06-27'),
+('TRANS04','T04','2023-06-27'),
+('TRANS05','T05','2023-06-28'),
+('TRANS06','T06','2023-06-28'),
+('TRANS07','T07','2023-06-29'),
+('TRANS08','T08','2023-06-29'),
+('TRANS09','T09','2023-06-29'),
+('TRANS10','T10','2023-06-29');
 UPDATE transaksi 
 SET id_tiket = 'T01', tanggal = '2023-06-27'
 WHERE id_transaksi = 'TRANS01';
@@ -71,9 +70,9 @@ DELETE FROM transaksi
 WHERE id_tiket = 'T01';    
 
 create table armada
-(id_armada varchar(10) primary key not null,kelas varchar(10), id_rute varchar(10), jumlah_kursi numeric (12), harga int(9) );
+(id_armada varchar(10) primary key not null,kelas varchar(10), id_rute varchar(10), jumlah_kursi numeric (12), harga varchar(12) );
 INSERT INTO armada
-	(id_armada,rute,kelas,id_rute,jumlah_kursi,harga)
+(id_armada,id_rute,kelas,jumlah_kursi,harga)
     VALUES ('ARM01','RUTE01','EXECUTIVE','28','210.000.00'),
     ('ARM02','RUTE01','SUPER EXECUTIVE','21','280.000.00'),
     ('ARM03','RUTE02','EXECUTIVE','28','190.000.00'),
@@ -105,9 +104,9 @@ INSERT INTO armada
     where id_armada = 'ARM24';
 
 CREATE table laporan_transaksi 
-(id_laporan varchar(10) primary key not null, tanggal date, jumlah_tiket numeric(12), total_pendapatan numeric(12) );
+(id_laporan varchar(10) primary key not null,id_transaksi varchar(10), tanggal date, jumlah_tiket numeric(12), total_pendapatan numeric(12) );
 INSERT INTO laporan_transaksi
-(id_laporan,tanggal,jumlah_transaksi,total_pendapatan)
+(id_laporan,id_transaksi,tanggal,jumlah_tiket,total_pendapatan)
 VALUES ('L001','TRANS01','2023-06-27','1','280000'),
 ('L002','TRANS02','2023-06-27','1','280000'),
 ('L003','TRANS03','2023-06-27','1','280000'),
@@ -125,7 +124,7 @@ DELETE FROM laporan_transaksi
 WHERE id_laporan = 'L010';
   
 create table Rute 
-( id_rute varchar(10), rute_awal varchar(50), rute_akhir varchar(50) );
+( id_rute varchar(10) primary key not null, rute_awal varchar(50), rute_akhir varchar(50) );
 INSERT INTO Rute
 (id_rute,rute_awal,rute_akhir)
 VALUES ('RUTE01','jakarta,cikarang,karawang','semarang,jepara'),
