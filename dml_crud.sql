@@ -26,7 +26,8 @@ WHERE nama = 'dito';
 
 -- TABEL JADWAL_BERANGKAT
 create table jadwal_berangkat
-(id_jadwal varchar(10) primary key not null, id_armada varchar(10), jam_berangkat time);
+(id_jadwal varchar(10) primary key not null, id_armada varchar(10), jam_berangkat time, 
+foreign key (id_armada) references armada(id_armada));
 INSERT INTO `jadwal_berangkat` (`id_jadwal`, `id_armada`, `jam_berangkat`)
 VALUES ('JD01', 'ARM01', '08:00:00'),
 ('JD02', 'ARM01', '15:30:00'),
@@ -52,7 +53,9 @@ VALUES ('JD01', 'ARM01', '08:00:00'),
 
 -- TABEL TIKET
 create table tiket
-(id_tiket varchar(10) primary key not null, id_jadwal varchar(10), id_penumpang varchar(10), no_kursi numeric(10) );
+(id_tiket varchar(10) primary key not null, id_jadwal varchar(10), id_penumpang varchar(10), no_kursi numeric(10),
+foreign key (id_jadwal) references jadwal_berangkat(id_jadwal),
+foreign key (id_penumpang) references penumpang(id_penumpang));
 INSERT INTO tiket
 (id_tiket,id_jadwal,id_penumpang,no_kursi)
 VALUES ('T01','JD04','P01','1'),
@@ -77,7 +80,8 @@ WHERE id_jadwal = 'JD04';
 
 -- TABEL TRANSAKSI
 create table transaksi
-(id_transaksi varchar(10) primary key not null, id_tiket varchar(10), tanggal date);
+(id_transaksi varchar(10) primary key not null, id_tiket varchar(10), tanggal date,
+foreign key (id_tiket) references tiket(id_tiket) );
 INSERT INTO transaksi 
 (id_transaksi,id_tiket,tanggal)
 VALUES ('TRANS01','T01','2023-06-27'),
@@ -99,7 +103,8 @@ WHERE id_tiket = 'T01';
 
 -- TABEL ARMADA
 create table armada
-(id_armada varchar(10) primary key not null,kelas varchar(10), id_rute varchar(10), jumlah_kursi numeric (12), harga varchar(12) );
+(id_armada varchar(10) primary key not null,kelas varchar(10), id_rute varchar(10), jumlah_kursi numeric (12), harga varchar(12).
+foreign key (id_rute) references rute(id_rute) );
 INSERT INTO armada
 (id_armada,id_rute,kelas,jumlah_kursi,harga)
     VALUES ('ARM01','RUTE01','EXECUTIVE','28','210.000.00'),
@@ -134,7 +139,8 @@ INSERT INTO armada
 
 -- TABEL LAPORAN TRANSAKSI
 CREATE table laporan_transaksi 
-(id_laporan varchar(10) primary key not null,id_transaksi varchar(10), tanggal date, jumlah_tiket numeric(12), total_pendapatan numeric(12) );
+(id_laporan varchar(10) primary key not null,id_transaksi varchar(10), tanggal date, jumlah_tiket numeric(12), total_pendapatan numeric(12),
+foreign key (id_transaksi) references transaksi(id_transaksi) );
 INSERT INTO laporan_transaksi
 (id_laporan,id_transaksi,tanggal,jumlah_tiket,total_pendapatan)
 VALUES ('L001','TRANS01','2023-06-27','1','280000'),
