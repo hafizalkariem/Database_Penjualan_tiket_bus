@@ -46,7 +46,7 @@ laporan_transaksi ---> transaksi dengan kardinalitas `one to one`
 
 ## SQL Data Definition Language
 
-untuk melihat keseluruhan query DDL anda dapat melihatnya di : .....  
+untuk melihat keseluruhan query DDL anda dapat melihatnya di : [Script DDL](penjualan_tiket_bus.sql)    
 berikut syntak untuk membuat databasenya:
 ```sql
 create database penjualan_tiket_bus;
