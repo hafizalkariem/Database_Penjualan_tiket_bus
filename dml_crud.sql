@@ -100,7 +100,7 @@ DELETE FROM laporan_transaksi
 WHERE id_laporan = 'L010';
   
 create table Rute 
-( id_rute varchar(10), rute_awal varchar(50), rute_akhir varchar(50) );
+( id_rute varchar(10) primary key not null, rute_awal varchar(50), rute_akhir varchar(50) );
 INSERT INTO Rute
 (id_rute,rute_awal,rute_akhir)
 VALUES ('RUTE01','jakarta,cikarang,karawang','semarang,jepara'),
