@@ -103,7 +103,7 @@ WHERE id_tiket = 'T01';
 
 -- TABEL ARMADA
 create table armada
-(id_armada varchar(10) primary key not null,kelas varchar(10), id_rute varchar(10), jumlah_kursi numeric (12), harga varchar(12).
+(id_armada varchar(10) primary key not null,kelas varchar(20), id_rute varchar(10), jumlah_kursi numeric (12), harga varchar(12).
 foreign key (id_rute) references rute(id_rute) );
 INSERT INTO armada
 (id_armada,id_rute,kelas,jumlah_kursi,harga)
