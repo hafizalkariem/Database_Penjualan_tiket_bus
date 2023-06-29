@@ -24,7 +24,7 @@
 
 
 
-## ERD
+## <h1 align="center">ERD<h1> 
 
 Dalam tugas kali ini kita dituntut untuk membuat Entity Relationship Diagram dengan beberapa ketentuan sebai berikut:
 1. mengelola data armada
@@ -44,7 +44,7 @@ armada ---> rute dengan kardinalitas `many to one`
 transaksi ---> tiket dengan kardinalitas `one to one`  
 laporan_transaksi ---> transaksi dengan kardinalitas `one to one`  
 
-## SQL Data Definition Language
+## <h1 align="center">SQL Data Definition Language<h1>
 
 untuk melihat keseluruhan query DDL anda dapat melihatnya di : [Script DDL](penjualan_tiket_bus.sql)    
 berikut syntak untuk membuat databasenya:
@@ -88,7 +88,7 @@ untuk hasil dari tabelnya adalah sebagai berikut:
 
 
 
-## SQL Data Manipulation Language (CRUD)
+## <h1 align="center">SQL Data Manipulation Language (CRUD)<h1>
 setelah membuat tabel tabel diatas maka selanjutnya tentu kita melakukan query CREATE,READ,UPDATE,DELETE    
 untuk querynya dapat dilihat di : [SQL CRUD](dml_crud.sql)   
 
@@ -141,7 +141,7 @@ select * from penumpang;
 ### laporan_transaksi
 ![data laporan](https://github.com/hafizalkariem/Database_Penjualan_tiket_bus/assets/115614957/5583c854-137b-4ac5-994c-93cea7267bba)
 
-## SQL JOIN
+## <h1 align="center">SQL JOIN<h1>
 
 SQL JOIN terbagi menjadi beberapa bagian seperti INNER JOIN, LEFT JOIN, RIGHT JOIN dan FULL JOIN. sql ini berfungsi untuk menggabungkan antara beberapa data dari beberapa tabel yang ada dalam sebuah database. untuk keseluruhan syntaq sql join ada di : [SQL JOIN](sql_join.sql)    
 
@@ -157,7 +157,7 @@ INNER JOIN rute on rute.id_rute = armada.id_rute;
 
 Berikut adalah hasil screenshot dari syntak-syntak sql join yang ada di atas :  
 
-### INNER JOIN 
+### INNER JOIN
 
 ![inner join jadi](https://github.com/hafizalkariem/praktikum-5/assets/115614957/9b60777c-64c6-4911-8ab0-81fe27e8da47)  
 ### LEFT JOIN  
