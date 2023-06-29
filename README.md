@@ -143,5 +143,29 @@ select * from penumpang;
 
 ## SQL JOIN
 
-SQL JOIN terbagi menjadi beberapa bagian seperti INNER JOIN, LEFT JOIN, RIGHT JOIN dan FULL JOIN.
+SQL JOIN terbagi menjadi beberapa bagian seperti INNER JOIN, LEFT JOIN, RIGHT JOIN dan FULL JOIN. sql ini berfungsi untuk menggabungkan antara beberapa data dari beberapa tabel yang ada dalam sebuah database. untuk keseluruhan syntaq sql join ada di : [SQL JOIN](sql_join.sql)    
+
+berikut adalah salah satu syntak sql join yang akan kami tampilkan. yaitu `INNER JOIN`:
+```sql
+SELECT penumpang.nama,tiket.no_kursi, jadwal_berangkat.jam_berangkat,rute.rute_awal,rute.rute_akhir, armada.kelas, armada.harga FROM penumpang 
+INNER JOIN tiket ON penumpang.id_penumpang = tiket.id_penumpang 
+INNER join jadwal_berangkat ON jadwal_berangkat.id_jadwal = tiket.id_jadwal 
+INNER JOIN armada on armada.id_armada = jadwal_berangkat.id_armada 
+INNER JOIN rute on rute.id_rute = armada.id_rute;
+
+``` 
+
+Berikut adalah hasil screenshot dari syntak-syntak sql join yang ada di atas :  
+
+``INNER JOIN``
+![inner join jadi](https://github.com/hafizalkariem/praktikum-5/assets/115614957/9b60777c-64c6-4911-8ab0-81fe27e8da47)  
+``LEFT JOIN``
+![left join jadi](https://github.com/hafizalkariem/praktikum-5/assets/115614957/c4eb92bf-b451-430e-a381-4c676f28311e)   
+``RIGHT JOIN``
+![right join jadi](https://github.com/hafizalkariem/praktikum-5/assets/115614957/7180b6cc-2270-44ab-a09a-200674ba2630)  
+``FULL JOIN``
+![full join jadi](https://github.com/hafizalkariem/praktikum-5/assets/115614957/1c45ae41-8858-448d-b6a2-c1dfdbe6e7ac)   
+
+### TERIMAKASIH SUDAH MEMBACA 😁😁😁
+
 
