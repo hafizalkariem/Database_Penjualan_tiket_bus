@@ -157,15 +157,27 @@ INNER JOIN rute on rute.id_rute = armada.id_rute;
 
 Berikut adalah hasil screenshot dari syntak-syntak sql join yang ada di atas :  
 
-``INNER JOIN``
+### INNER JOIN 
+
 ![inner join jadi](https://github.com/hafizalkariem/praktikum-5/assets/115614957/9b60777c-64c6-4911-8ab0-81fe27e8da47)  
-``LEFT JOIN``
+### LEFT JOIN  
+
 ![left join jadi](https://github.com/hafizalkariem/praktikum-5/assets/115614957/c4eb92bf-b451-430e-a381-4c676f28311e)   
-``RIGHT JOIN``
+### RIGHT JOIN 
+
 ![right join jadi](https://github.com/hafizalkariem/praktikum-5/assets/115614957/7180b6cc-2270-44ab-a09a-200674ba2630)  
-``FULL JOIN``
+### FULL JOIN 
+
 ![full join jadi](https://github.com/hafizalkariem/praktikum-5/assets/115614957/1c45ae41-8858-448d-b6a2-c1dfdbe6e7ac)   
 
 ### TERIMAKASIH SUDAH MEMBACA 😁😁😁
+
+###
+
+| [AWAL](#laporan-database-penjualan-tiket-bus) | [COLLABORATOR](#collabolators)  | [TUGAS](#tugas) |
+| :---| :------- | :----- |
+
+###
+
 
 
