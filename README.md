@@ -157,7 +157,7 @@ INNER JOIN rute on rute.id_rute = armada.id_rute;
 
 Berikut adalah hasil screenshot dari syntak-syntak sql join yang ada di atas :  
 
-### INNER JOIN
+### <span style="color: red">INNER JOIN </span>
 
 ![inner join jadi](https://github.com/hafizalkariem/praktikum-5/assets/115614957/9b60777c-64c6-4911-8ab0-81fe27e8da47)  
 ### LEFT JOIN  
