@@ -5,12 +5,12 @@
 
 #### collabolators
 
-| Nama                   | NIM       |
-| :--------              | :-------  |
-| Ahmad Hapizhudin       | 312210370 |
-| Dzaki Abiyyu           | 312210381 |
-| Dafa Alfiana Erlangga | 312210446 |
-| Maulana Zidan Perdana  | 312210463 |
+| Nama                            | NIM       |
+| :--------                       | :-------  |
+| Ahmad Hapizhudin                | 312210370 |
+| Muhammad Dzaki Abiyyu           | 312210381 |
+| Dafa Alfiana Erlangga           | 312210446 |
+| Maulana Zidan Perdana           | 312210463 |
 
 #### Tugas
 
